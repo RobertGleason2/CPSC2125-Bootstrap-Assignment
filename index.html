@@ -1,0 +1,158 @@
+<!--
+Robert Gleason
+11/6/2023
+CPSC 2125
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bootstrap</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Header</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12  text-center">
+        <nav class="navbar navbar-expand-sm bg-primary">
+          <a href="#" class="navbar-brand mb-0 h1">
+            <img img class="d-inline-block align-top" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" width="30" height="30"/> Navbar </a>
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <u class="navbar-nav">
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a href="Page2.html" class="nav-link active">Page 2</a>
+              </li>
+              <li class="nav-item active">
+                <a href="https://www.acm.org/" class="nav-link active">ACM</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-6  ">
+        <h2>Table of Shows</h2>
+        <table class="table table-striped table-bordered table-dark">
+          <thead>
+            <tr>
+              <th>Show Name</th>
+              <th>Genre</th>
+              <th>Number of Ep</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Steins;Gate</td>
+              <td>Science/Thriller</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>Re:Zero</td>
+              <td>Fantasy</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>Death Parade</td>
+              <td>Thriller</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>One Punch Man</td>
+              <td>Superhero</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>Mob Psycho 100</td>
+              <td>Action/Supernatural</td>
+              <td>24</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>This is just a list of some of my favorite shows since I didn't know what to put in the table. :)</p>
+      </div>
+      <div class="col-sm-6 bg-info text-center">
+        <h2>Images of Shows In Table</h2>
+        <div>
+          <!--Carousel -->
+          <div id="pictures" class="carousel slide text-center"  data-bs-ride="carousel">
+            <!--Carousel indicator buttons at the bottom-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#pictures" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#pictures" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#pictures" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#pictures" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#pictures" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src=images/steinsgate.jpg class="mx-auto d-block">
+              </div>
+              <div class="carousel-item">
+                <img src=images/rezero.jpg class="mx-auto d-block">
+              </div>
+              <div class="carousel-item ">
+                <img src=images/deathparade.jpg class="mx-auto d-block">
+              </div>
+              <div class="carousel-item ">
+                <img src=images/onepunchman.jpg class="mx-auto d-block">
+              </div>
+              <div class="carousel-item ">
+                <img src=images/mobpsycho.jpg class="mx-auto d-block">
+              </div>
+            </div>
+            <!-- -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#pictures" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pictures" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <p>Posters of the shows listed in the table.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 bg-dark text-white text-center">
+        <h2>Footer</h2>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- For the nav bar I followed the tutorial link on YouTube that was in the instructions https://www.youtube.com/watch?v=qNifU_aQRio
+For the Bootstrap logo, I got it from the Bootstrap website https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg
+For making the container, I followed the YouTube tutorial in the instructions https://www.youtube.com/watch?v=2wy-MnKUbJo
+
+For the carousel, I went to the w3 schools website and used the tutorial for the basic one: 
+https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
+
+The pictures I wanted to use some that are relatively the same size and luckily the posters for the shows for them are all just that. Here's links to where I got each of them to download and use:
+https://cdn.myanimelist.net/images/anime/5/71553.jpg
+https://cdn.myanimelist.net/images/anime/12/76049.jpg
+https://cdn.myanimelist.net/images/anime/1935/127974.jpg
+https://cdn.myanimelist.net/images/anime/1522/128039.jpg
+https://cdn.myanimelist.net/images/anime/8/80356.jpg
+-->
